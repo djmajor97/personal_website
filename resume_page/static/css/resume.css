@@ -58,7 +58,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: black;
+  background-color: #495057;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -155,10 +155,6 @@ section.resume-section {
   max-width: 75rem;
 }
 
-.d-lg-block {
-  max-width: 1% !important;
-  max-height: 1% !important;
-}
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }

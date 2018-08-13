@@ -1,10 +1,279 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>David Major</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{%  static 'css/resume.min.css' %}" rel="stylesheet">
+
+      <link rel="icon" href="{% static 'img/dm.png' %}">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">David Major</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-1 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'img/profile.jpg' %}" alt="">
+              &nbsp;&nbsp;David
+            <span class="text-primary">Major</span>
+          </h1>
+          <div class="subheading mb-5">0719 Frist Center Princeton University, Princeton NJ, 08544
+            <a href="mailto:name@email.com">djmajor@princeton.edu</a>
+          </div>
+          <p class="lead mb-5">I am a CS student at Princeton University minoring in the History and Practice of Diplomacy. I've worked in past internships in cybersecurity, product, and other fields and on numerous personal projects. My interests include cybersecurity, product management, and international technology policy.</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/david-major-99a62812b/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/djmajor97" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/davidmajor1/?hl=en" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+            <br>
+            <a type="button" class="btn btn-outline-primary" href="{% static 'files/Resume.pdf' %}" download="Resume.pdf">Download My Resume</a>
+        </div>
+
+
+      </section>
+
+      <hr class="m-0">
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Engineering and Product Intern</h3>
+                <div class="subheading mb-3"><a href="https://www.axonius.com/">Axonius</a>, Tel Aviv</div>
+                <p>• Implemented (<b>Python</b>) adapters to continuously and stably read and correlate data from Amazon Web Services, Google Cloud Engine,
+                  Alibaba Cloud, VMWare ESXi, and Juniper JunOS devices. Raised company’s cybersecurity cloud coverage by 15%.
+                    <br>• Implemented (<b>Python, Vue, and HTML</b>) backend + frontend of feature that asynchronously generates security report for client. Designed <b>UX</b> of feature in addition to coding frontend.
+                    <br>• Researched and wrote <b>product</b> report for the CEO estimating the company’s coverage of the total cybersecurity market.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2018 - August 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Research Intern</h3>
+                <div class="subheading mb-3"><a href="https://hartman.org.il/">Shalom Hartman Institute</a></div>
+              <p>• Researched the 1948 Israeli-Arab war for Professor Yitzhak Benbaji, put together summaries and quote collections,
+                edited research proposals, and worked with Professor Benbaji to refine his arguments.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2017 - July 2017</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Club Talk Princeton</h3>
+              <div class="subheading mb-3"><a href="https://clubtalk.herokuapp.com/">clubtalk.herokuapp.com</a></div>
+                <p>• Built website used by <b>500+</b> students for exploring and anonymously reviewing Princeton extracurricular clubs.
+                  <br>• Implemented forms in back-end using <b>Python-based Django</b> and entire-front end of the website using <b>HTML</b>, <b>CSS</b>, and
+                  a <b>Bootstrap</b>-based design; served as project leader and created <b>product strategy and UX.</b></p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+              <img class="img-fluid mx-auto mb-2" src="{% static 'img/screenshot1.png' %}" alt="">
+          </div>
+          <div class="col-6">
+              <img class="img-fluid mx-auto mb-2" src="{% static 'img/screenshot2.png' %}" alt="">
+          </div>
+        </div>
+        <br>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Monty Hall Problem</h3>
+                <p>• Wrote program in <b>Java</b> simulating the Monty Hall problem and printing statistics of thousands of trials of the problem.
+                    <br>• Wrote accompanying paper analyzing the statistics.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-python"></i>
+            </li>
+              <li class="list-inline-item">
+              <i class="fab fa-java"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-cuttlefish"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-python"></i>Django
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+
+          </ul>
+            <p>Python, Java, C, Django, HTML/CSS.</p>
+          <div class="subheading mb-3">Projects/teams</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Product Design/UX</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Product/market research</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Full-stack Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Web design</li>
+          </ul>
+            <br>
+            <div class="subheading mb-3">Languages</div>
+            <p>Highly proficient in Hebrew, basic skills in Spanish.</p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards</h2>
+          <ul class="ul">
+            <li>
+                <b><a href="https://www.linkedin.com/company/birthright-israel-excel/" target="_blank">Birthright Excel Fellow</a></b>: 1 of 56 students selected out of 2,500+ applicants for year-long leadership fellowship and 10 week internship program in Tel Aviv.</li>
+            <li>
+              <b>National Merit Scholarship Program </b>Letter of Commendation.</li>
+            <li>
+              <b>Waldman Computer Science Award </b>for outstanding work in computer science at Ramaz School.</li>
+          </ul>
+        </div>
+      </section>
+
+        <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">Princeton University</h3>
+                    <div class="subheading mb-3">Princeton, New Jersey</div>
+                    <p><b>Major: </b>Computer Science.  <br><b>Minor: </b>History and Practice of Diplomacy (HPD).</p>
+                    <p><b>CS Courses: </b>Advanced Programming Techniques (COS 333), Algorithms and Data Structures (COS 226), Information Security (COS 432), Reasoning About Computation (COS 340), Introduction to Programming Systems (COS 217), Computer Science: An Interdisciplinary Approach (COS 126), Linear Algebra (MAT 202).</p>
+                    <p><b>HPD Courses: </b>Grand Strategy (WWS 315), International Relations (POL 240), Causes of War (POL 388), US Foreign Relations (HIS 380), Early Modern England (HIS 368).</p>
+                </div>
+                <div class="resume-date text-md-right">
+                  <span class="text-primary">September 2016 - June 2020</span>
+                </div>
+              </div>
+        </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">Yeshivat Ma'ale Gilboa</h3>
+                <div class="subheading mb-3">Kibbutz Ma'ale Gilboa, Northern Israel</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2015 - August 2016</span>
+            </div>
+          </div>
+      </section>
+
+
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/resume.min.js' %}"></script>
+
+  </body>
+
 </html>
